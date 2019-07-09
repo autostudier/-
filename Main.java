@@ -29,9 +29,15 @@ public class Main {
 		SnakePanel panel = new SnakePanel();
 		//窗口添加面板
 		window.add(panel);
+		//窗口添加键盘监听器
+		window.addKeyListener(panel);
+		//面板添加监听器
+		panel.addKeyListener(panel);
+		//调用run方法
+		panel.run();
 	}
 	
-} 
+}
 
 
 
